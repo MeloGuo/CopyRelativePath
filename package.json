@@ -10,7 +10,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.copyRelativePath"
+		"onCommand:extension.copyRelativePath",
+		"onCommand:extension.copyRelativePathNoExt"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -18,12 +19,22 @@
 			{
 				"command": "extension.copyRelativePath",
 				"title": "Copy Relative Path"
+			},
+			{
+				"command": "extension.copyRelativePathNoExt",
+				"title": "Copy Relative Path No Extension"
 			}
 		],
 		"menus": {
 			"explorer/context": [
 				{
-					"command": "extension.copyRelativePath"
+					"command": "extension.copyRelativePath",
+					"group": "6_copypath"
+				},
+				{
+					"when": "!explorerResourceIsFolder",
+					"command": "extension.copyRelativePathNoExt",
+					"group": "6_copypath"
 				}
 			]
 		}
