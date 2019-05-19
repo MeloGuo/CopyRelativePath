@@ -1,13 +1,19 @@
 {
-	"name": "relative-path",
-	"displayName": "relative-path",
-	"description": "Help you find the relative path of the current file.",
+	"name": "copy-relative-path",
+	"displayName": "copy-relative-path",
+	"description": "Help you copy the relative path of the current file.",
 	"version": "0.0.1",
+	"publisher": "MeloGuo",
+	"repository": "https://github.com/MeloGuo/vscode-extensions-copy-relative-path",
 	"engines": {
 		"vscode": "^1.33.1"
 	},
 	"categories": [
 		"Other"
+	],
+	"keywords": [
+		"copy",
+		"path"
 	],
 	"activationEvents": [
 		"onCommand:extension.copyRelativePath",
