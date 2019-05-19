@@ -3,6 +3,7 @@
 	"displayName": "copy-relative-path",
 	"description": "Help you copy the relative path of the current file.",
 	"version": "0.0.1",
+	"icon": "images/icon.png",
 	"publisher": "MeloGuo",
 	"repository": "https://github.com/MeloGuo/vscode-extensions-copy-relative-path",
 	"engines": {
